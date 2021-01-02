@@ -1,9 +1,18 @@
 import React from "react";
-import {Text} from "react-native";
+import {Text, StyleSheet, ScrollView} from "react-native";
+import {Fab,Icon} from "native-base"
 
 const Home = () => {
     return (
-        <Text>Home js</Text>
+       <ScrollView contentContainerStyle={styles.container}>
+         <Text>List of seasons goes here..</Text>
+         <Fab
+         style={{backgroundColor:"#5067ff"}}
+         position = "bottomRight"
+         >
+           <Icon name="add"/>
+         </Fab>
+       </ScrollView>
     )
 }
 
